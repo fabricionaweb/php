@@ -97,7 +97,7 @@ class PagSeguroTransactionStatus
     public function getTypeFromValue($value = null)
     {
         $value = ($value == null ? $this->value : $value);
-        return array_search($this->value, self::$statusList);
+        return array_search($value, self::$statusList);
     }
 
     /***
